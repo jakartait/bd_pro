@@ -1,0 +1,21 @@
+@font-face {
+font-family: ElMessiri-Bold;
+src: url(../fonts/ElMessiri-Bold.ttf);
+}
+@font-face {
+font-family: ElMessiri-SemiBold;
+src: url(../fonts/ElMessiri-SemiBold.ttf);
+}
+@font-face {
+font-family: ElMessiri-Regular;
+src: url(../fonts/ElMessiri-Regular.ttf);
+}
+@font-face {
+font-family: ElMessiri-Medium;
+src: url(../fonts/ElMessiri-Medium.ttf);
+}
+
+body {
+  font-family: "ElMessiri-Regular", Helvetica, Arial, sans-serif;
+  font-size : 11px;
+}
