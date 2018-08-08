@@ -1,51 +1,64 @@
 @font-face {
-font-family: ElMessiri-Bold;
-src: url(../fonts/ElMessiri-Bold.ttf);
+    font-family: ElMessiri-Bold;
+    src: url(../fonts/ElMessiri-Bold.ttf);
 }
 @font-face {
-font-family: ElMessiri-SemiBold;
-src: url(../fonts/ElMessiri-SemiBold.ttf);
+    font-family: ElMessiri-SemiBold;
+    src: url(../fonts/ElMessiri-SemiBold.ttf);
 }
 @font-face {
-font-family: ElMessiri-Regular;
-src: url(../fonts/ElMessiri-Regular.ttf);
+    font-family: ElMessiri-Regular;
+    src: url(../fonts/ElMessiri-Regular.ttf);
 }
 @font-face {
-font-family: ElMessiri-Medium;
-src: url(../fonts/ElMessiri-Medium.ttf);
+    font-family: ElMessiri-Medium;
+    src: url(../fonts/ElMessiri-Medium.ttf);
 }
 
-body {
-  font-family: "ElMessiri-Regular";
-  font-size : 11px;
-  
-} 
 
 body > .container {
-  padding: 60px 15px 0;
+    padding: 60px 15px 0;
 }
 
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  line-height: 60px; /* Vertically center the text there */
-  background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #fff;
 }
 
 .footer > .container {
-  padding-right: 15px;
-  padding-left: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
 } 
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
 }
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
+}
+
+/* jssor slider loading skin spin css */
+.jssorl-009-spin img {
+    animation-name: jssorl-009-spin;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
