@@ -62,3 +62,10 @@ html {
         transform: rotate(360deg);
     }
 }
+
+@supports (shape-outside: circle()) {
+   .shape {
+      shape-outside: circle();
+   }
+}
+ 
