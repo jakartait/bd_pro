@@ -25,26 +25,26 @@
             }
         </style>
         <script type="text/javascript">
-            $(document).ready(function(){
+            $(document).ready(function () {
                 //new WOW().init();
                 $('#fullpage').fullpage({
                     //autoScrolling:false
                     scrollBar: true,
-                    afterRender: function(){
-                          new WOW().init();
+                    afterRender: function () {
+                        new WOW().init();
                     }
                     //sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
                 });
 
                 var $root = $('html, body');
 
-$('a[href^="#"]').click(function () {
-    $root.animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 500);
+                $('a[href^="#"]').click(function () {
+                    $root.animate({
+                        scrollTop: $($.attr(this, 'href')).offset().top
+                    }, 500);
 
-    return false;
-});
+                    return false;
+                });
 
             });
         </script>
@@ -73,7 +73,7 @@ $('a[href^="#"]').click(function () {
                             <li><a href="#section1" class="text">Practice Area</a></li>
                             <li><a href="#section2" class="text">Our Team</a></li>
                             <li><a href="#section3" class="text">Contact</a></li>
-                         </ul>
+                        </ul>
                         <ul class="social">
                             <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -85,95 +85,168 @@ $('a[href^="#"]').click(function () {
 
             </nav>
         </header>
-	   <div id="fullpage">
-        <section class="section first-section active" id="section0" style="background-color:#fff;">  
-			     <div class="container">
-                            <div class="col-xs-4 col-sm-4 col-lg-4"> 
-                              <div class="wow wobble center" style="visibility: visible; animation-name: swing;">
-                                <img src="assets/img/law.png" style="width:70%;margin-top: 50px">
-                            </div>
-                            </div>
-                              <div class="col-xs-8 col-sm-8 col-lg-8"> 
-                                <p class="text-muted" style="font-size:3vw"><strong>About The Firm</strong></p>
-                                <p style="font-size:1.5vw">TJAJO & Partners is one of the well-respected corporate law firms in Indonesia. We have a long-standing client relationships with multinational and leading corporations in various industry sectors, financial institutions, and relevant government entities. We earn the reputation due to our commitment to outstanding service and professional excellence.</p>
+        <div id="fullpage">
+            <section class="section first-section active" id="section0" style="background-color:#fff;">  
+                <div class="container">
+                    <div class="col-xs-4 col-sm-4 col-lg-4"> 
+                        <div class="wow wobble center" style="visibility: visible; animation-name: wobble;">
+                            <img src="assets/img/law.png" style="width:70%;margin-top: 50px">
+                        </div>
+                    </div>
+                    <div class="col-xs-8 col-sm-8 col-lg-8"> 
+                        <p class="text-muted" style="font-size:3vw"><strong>About The Firm</strong></p>
+                        <p style="font-size:1.5vw">TJAJO & Partners is one of the well-respected corporate law firms in Indonesia. We have a long-standing client relationships with multinational and leading corporations in various industry sectors, financial institutions, and relevant government entities. We earn the reputation due to our commitment to outstanding service and professional excellence.</p>
 
-                                <p style="font-size:1.5vw">
-                                    We take a careful understanding on the culture and the legal business environment in Indonesia and tailor each professional service to accomplish your business challenges. We continuously enrich the knowledge and evolve in the anticipation of the rapid legal environment.We practice in a true commercial approach that promises better value to our clients.
-                                 </p>
-                                <p style="font-size:1.5vw">
-                                    We have worked and represented our clients in various cross-border deals and complex transactions, in which some of those have received and/or being nominated for most notable deals by various prominent legal directories.
-                                </p>
-                                <p style="font-size:1.5vw">
-                                    We have built longstanding relationships with the relevant government institutions in the industry to provide comprehensive service on a national and international scale.
-                                </p>
-                            </div>
-    				</div>
-        </section>
-        <section class="second section" id="section1" style="background-color:#fff;">
-                 <div class="container">
-                              <div class="col-xs-8 col-sm-8 col-lg-8"> 
-                                <p class="text-muted" style="font-size:3vw"><strong>Practice Area</strong></p>
-                                <p style="font-size:1.5vw">TJAJO & Partners is one of the well-respected corporate law firms in Indonesia. We have a long-standing client relationships with multinational and leading corporations in various industry sectors, financial institutions, and relevant government entities. We earn the reputation due to our commitment to outstanding service and professional excellence.</p>
+                        <p style="font-size:1.5vw">
+                            We take a careful understanding on the culture and the legal business environment in Indonesia and tailor each professional service to accomplish your business challenges. We continuously enrich the knowledge and evolve in the anticipation of the rapid legal environment.We practice in a true commercial approach that promises better value to our clients.
+                        </p>
+                        <p style="font-size:1.5vw">
+                            We have worked and represented our clients in various cross-border deals and complex transactions, in which some of those have received and/or being nominated for most notable deals by various prominent legal directories.
+                        </p>
+                        <p style="font-size:1.5vw">
+                            We have built longstanding relationships with the relevant government institutions in the industry to provide comprehensive service on a national and international scale.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="second section" id="section1" style="background-color:#fff;">
+                <div class="container">
+                    <div class="col-xs-8 col-sm-8 col-lg-8"> 
+                        <p class="text-muted" style="font-size:3vw"><strong>Practice Area</strong></p>
+                        <ul class="timeline">
+                            <!-- timeline time label -->
+                            <li class="time-label">
+                                <span class="bg-red">
+                                    Capital Market
+                                </span>
+                            </li>
+                            <!-- /.timeline-label -->
+                            <!-- timeline item -->
+                            <li>
 
-                                <p style="font-size:1.5vw">
-                                    We take a careful understanding on the culture and the legal business environment in Indonesia and tailor each professional service to accomplish your business challenges. We continuously enrich the knowledge and evolve in the anticipation of the rapid legal environment.We practice in a true commercial approach that promises better value to our clients.
-                                 </p>
-                                <p style="font-size:1.5vw">
-                                    We have worked and represented our clients in various cross-border deals and complex transactions, in which some of those have received and/or being nominated for most notable deals by various prominent legal directories.
-                                </p>
-                                <p style="font-size:1.5vw">
-                                    We have built longstanding relationships with the relevant government institutions in the industry to provide comprehensive service on a national and international scale.
-                                </p>
-                            </div>
-                            <div class="col-xs-4 col-sm-4 col-lg-4"> 
-                                <div class="wow swing center" style="visibility: visible; animation-name: swing;">
-                                    <img src="assets/img/auction.png" style="width:70%;margin-top: 50px">
+                                <div class="timeline-item">
+                                    <div class="timeline-body">
+                                        We have extensive experience in representing various corporations, underwriters, private equity firms and investment banks in all aspects of capital markets transactions, such as early stage of financing, all types of initial and subsequent follow-on equity offerings and private placements. 
+                                    </div>
+                                    <div class="timeline-footer">
+                                        <a class="btn btn-primary btn-xs">Read more</a>
+                                     </div>
+                                </div>
+                            </li>
+                            <!-- END timeline item -->
+                            <li class="time-label">
+                                <span class="bg-red">
+                                    M & A and General Corporate
+                                </span>
+                            </li>
+                            <!-- timeline item -->
+                                <li>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-body">
+                                    We feature a full range of corporate and commercial matters, from the corporate and regulatory advice, compliance, restructuring and reorganization, foreign investment and joint ventures, to the most complex mergers and acquisitions.</div>
+                                    <div class="timeline-footer">
+                                        <a class="btn btn-primary btn-xs">Read more</a>
+                                     </div>
+                                </div>
+                            </li>
+                            <!-- END timeline item -->
+                         
+                            <li class="time-label">
+                                <span class="bg-red">
+                                   Banking and Finance
+                                </span>
+                            </li>
+                            <!-- timeline item -->
+                                <li>
+                                <div class="timeline-item">
+                                    <div class="timeline-body">
+                                   We advise on full services of banking and finance matters, representing corporations, institutional lenders, and other financial institutions to include arrangers, asset and fund managers. 
+                                    </div>
+                                   <div class="timeline-footer">
+                                        <a class="btn btn-primary btn-xs">Read more</a>
+                                     </div>
+                                </div>
+                            </li>
+                            <!-- END timeline item -->
+                              <li class="time-label">
+                                <span class="bg-red">
+                                   Projects & Procurement
+                                </span>
+                            </li>
+                            <!-- timeline item -->
+                                <li>
+                                <div class="timeline-item">
+                                    <div class="timeline-body">
+                                   Our Project practice representing financial institutions as lenders and borrowers across the full spectrum of industries and lending schemes. 
+                                    </div>
+                                   <div class="timeline-footer">
+                                        <a class="btn btn-primary btn-xs">Read more</a>
+                                     </div>
+                                </div>
+                            </li>
+                            <!-- END timeline item -->
+                            <!-- timeline item -->
+                                <li>
+                                <div class="timeline-item">
+                                    <div class="timeline-body">
+                                   We advise on full services of banking and finance matters, representing corporations, institutional lenders, and other financial institutions to include arrangers, asset and fund managers. 
+                                   <div class="timeline-footer">
+                                        <a class="btn btn-primary btn-xs">Read more</a>
+                                     </div>
+                                </div>
+                            </li>
+                            <!-- END timeline item -->
+                             
+                            <li>
+                                <i class="fa fa-clock-o bg-gray"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-lg-4"> 
+                        <div class="wow flipInY center" style="visibility: visible; animation-name: flipInY;">
+                            <img src="assets/img/auction.png" style="width:70%;margin-top: 50px">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="four section parallax-window" id="section3"  data-parallax="scroll" data-image-src="">  
+                <footer class="footer">
+                    <div class="page-prefooter" style="color:white;min-height:2vw;height:auto;background:#1F81C2">
+                        <div class="container">
+                            <div class="row">
+                                <div class="text-justify col-xs-6 col-sm-6 col-lg-6 footer-block">
+                                    <address class="margin-bottom-40">
+                                        <h1 style="font-size: 2vw">Address</h1>
+                                        <p style="font-size: 1vw">
+                                            Satrio Tower 15th Floor,   </p>
+                                        <p style="font-size: 1vw"> Jalan Prof. Dr. Satrio Kav. C4 </p>
+                                        <p style="font-size: 1vw"> Jakarta 12950, Indonesia </p>
+                                    </address>
+                                </div>
+
+                                <div class="text-justify col-xs-6 col-sm-6 col-lg-6 footer-block">
+                                    <h1 style="font-size: 2vw">Kontak</h1>
+                                    <address class="margin-bottom-40">
+
+                                        <p style="font-size: 1vw">Telp : +62 21 2251 3653 </p>
+                                        <p style="font-size: 1vw">Fax : +62 21 2251 3655    </p>
+                                        <p style="font-size: 1vw">Email : <a href="mailto:info@tjajolaw.id">info@tjajolaw.id</a></p>
+                                    </address>
                                 </div>
                             </div>
+                        </div>
                     </div>
-            </div>
-          </div>
-          </section>
-           <section class="four section" id="section3">
-        <footer class="footer">
-        <div class="page-prefooter" style="color:white;min-height:2vw;height:auto;background:#1F81C2">
-        <div class="container">
-            <div class="row">
-                <div class="text-justify col-xs-6 col-sm-6 col-lg-6 footer-block">
-                    <address class="margin-bottom-40">
-                    <h1 style="font-size: 2vw">Address</h1>
-                    <p style="font-size: 1vw">
-                         Satrio Tower 15th Floor,   </p>
-                    <p style="font-size: 1vw"> Jalan Prof. Dr. Satrio Kav. C4 </p>
-                    <p style="font-size: 1vw"> Jakarta 12950, Indonesia </p>
-                    </address>
-                </div>
-                
-                <div class="text-justify col-xs-6 col-sm-6 col-lg-6 footer-block">
-                   <h1 style="font-size: 2vw">Kontak</h1>
-                    <address class="margin-bottom-40">
-                     
-                        <p style="font-size: 1vw">Telp : +62 21 2251 3653 </p>
-                        <p style="font-size: 1vw">Fax : +62 21 2251 3655    </p>
-                        <p style="font-size: 1vw">Email : <a href="mailto:info@tjajolaw.id">info@tjajolaw.id</a></p>
-                    </address>
-                </div>
-            </div>
-        </div>
-    </div>
-            <div class="container">
-                <span class="text-muted">  @ Tjajo & Partners 2018 </span>
-            </div>
-        </footer>
-</section>
-  
- 
-        <script type="text/javascript" src="assets/js/jquery-ui-1.10.3.min.js"></script>
-        <script type="text/javascript" src="assets/js/jquery.datatables.min.js"></script>
-        <script type="text/javascript" src="assets/js/animated-sticky-header.js"></script>
-        <script type="text/javascript" src="assets/js/parallax.min.js"></script>
-        <script type="text/javascript" src="assets/js/jquery.fullpage.min.js"></script>
-
+                    <div class="container">
+                        <span class="text-muted">  @ Tjajo & Partners 2018 </span>
+                    </div>
+                </footer>
+            </section>
     </body>
 </html>
 
+<script type="text/javascript" src="assets/js/jquery-ui-1.10.3.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.datatables.min.js"></script>
+<script type="text/javascript" src="assets/js/animated-sticky-header.js"></script>
+<script type="text/javascript" src="assets/js/parallax.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.fullpage.min.js"></script>
