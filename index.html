@@ -18,7 +18,7 @@
         <script type="text/javascript" src="assets/js/jquery.min.js"></script>
         <script type="text/javascript" src="assets/js/bootstrap.js"></script>
         <script type="text/javascript" src="assets/js/wow.min.js"></script>
-        <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
         <style>
             .parallax-window {
 /*                min-height: 240px;*/
@@ -163,11 +163,17 @@
 <script>
       var map;
       function initMap() {
+      var mylatlang= {lat: -6.225232, lng:106.828218};
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -6.225232, lng:106.828218},
-            
-          zoom: 8
+          center: mylatlang,
+          zoom: 15
         });
+          
+           var marker = new google.maps.Marker({
+            position: mylatlang,
+            map: map,
+            title: 'Hello World!'
+          });
       }
     </script>
 <script type="text/javascript" src="assets/js/jquery-ui-1.10.3.min.js"></script>
