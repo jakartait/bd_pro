@@ -27,7 +27,8 @@ body > .container {
     /* Set the fixed height of the footer here */
 /*    height: 40px;*/
     line-height: 40px; /* Vertically center the text there */
-    background-color: #fff;
+    background-color: #1F81C2;
+    color: #fff;
 }
 
 .footer > .container {
@@ -37,12 +38,14 @@ body > .container {
 
 body {
     /* Margin bottom by footer height */
-    margin-bottom: 60px;
+/*    margin-bottom: 60px;*/
 }
+ 
 html {
     position: relative;
     min-height: 100%;
 }
+ 
 
 /* jssor slider loading skin spin css */
 .jssorl-009-spin img {
@@ -63,14 +66,6 @@ html {
 }
 
  
- a{
-  color:#FFF;
- }
- 
- a:hover{
-     color:#FFF;
-	text-decoration: underline;
- }
  
  .parallax-windows {
     opacity: 0.5;
