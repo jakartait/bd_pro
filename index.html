@@ -19,6 +19,7 @@
         <script type="text/javascript" src="assets/js/jquery.min.js"></script>
         <script type="text/javascript" src="assets/js/bootstrap.js"></script>
         <script type="text/javascript" src="assets/js/wow.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.smooth-scroll.js"></script>
         <style>
             .parallax-window {
 /*                min-height: 240px;*/
@@ -37,6 +38,17 @@
                     }
                     )
                     wow.init();
+            
+            $(function(){
+                $('li a').click(function(event) {
+                    event.preventDefault();
+                    var link = this;
+                    $.smoothScroll({
+                      scrollTarget: link.hash
+                    });
+                  });
+
+            })
         </script>
         
     </head>
@@ -60,8 +72,8 @@
             <div id="navbar" class="navbar-collapse collapse navbar-right">
                 <div class="container">
                     <ul class="nav navbar-nav">
-                        <li><a href="#section0" class="text">Home</a></li>
-                        <li><a href="#section1" class="text">Practice Area</a></li>
+                        <li><a href="#home" class="text">Home</a></li>
+                        <li><a href="#practice" class="text">Practice Area</a></li>
                         <li><a href="#section2" class="text">Our Team</a></li>
                         <li><a href="#section3" class="text">Contact</a></li>
                     </ul>
@@ -77,15 +89,15 @@
     </header>
         
   
-    <section class="section first-section active parallax-windows" id="section0" data-parallax="scroll" data-image-src="assets/img/100.jpg" style="height:30vw; min-height:200px;background-color:#fff;">
+    <section class="section first-section active parallax-windows" id="home" data-parallax="scroll" data-image-src="assets/img/100.jpg" style="height:auto; min-height:300px;background-color:#fff;">
          
     </section>
-     <section class=" section" id="section1" style="padding:40px;height:auto; min-height:20vw">
+     <section class=" section" id="home" style="padding:40px;height:auto; min-height:20vw">
 <!--         <div class="container">-->
             <div class="col-xs-4 col-sm-4 col-lg-4">
                 <div class="info-box" style="height:40%">
                     <div class="box-body">
-                        <p style="text-align:center"  class="wow bounceInUp center" ><i class="fa fa-handshake-o" style="color:#1F81C2;font-size:10vw"></i></p>
+                       <a href=""> <p style="text-align:center"  class="wow bounceInUp center" ><i class="fa fa-handshake-o" style="color:#1F81C2;font-size:10vw"></i></p></a>
                         <p class="text-muted" style="text-align:center;font-size:2vw"><strong>Commitment</strong></p> 
                     </div>
 <!--
@@ -97,7 +109,7 @@
              <div class="col-xs-4 col-sm-4 col-lg-4">
                  <div class="info-box" style="height:40%">
                     <div class="box-body">
-                      <p style="text-align:center"  class="wow bounceInUp center" ><i class="fa fa-lightbulb-o" style="color:#1F81C2;font-size:10vw"></i></p>
+                        <a href=""> <p style="text-align:center"  class="wow bounceInUp center" ><i class="fa fa-lightbulb-o" style="color:#1F81C2;font-size:10vw"></i></p></a>
                        <p class="text-muted" style="text-align:center;font-size:2vw"><strong>Commersial Insight</strong></p> 
                     </div>
 <!--
@@ -109,7 +121,7 @@
              <div class="col-xs-4 col-sm-4 col-lg-4">
                    <div class="info-box" style="height:40%">
                         <div class="box-body">
-                          <p style="text-align:center"  class="wow bounceInUp center" ><i class="fa fa-bullseye" style="color:#1F81C2;font-size:10vw"></i></p>
+                            <a href="">   <p style="text-align:center"  class="wow bounceInUp center" ><i class="fa fa-bullseye" style="color:#1F81C2;font-size:10vw"></i></p></a>
                            <p class="text-muted" style="text-align:center;font-size:2vw"><strong>Strategic Goals</strong></p> 
                        </div>
 <!--
@@ -120,7 +132,7 @@
 <!--             </div>-->
         </div>
      </section>
-      <section style="background-color:#fff; height:auto; min-height:20vw;margin-top:10vh" class="parallax-windows" data-parallax="scroll" data-image-src="assets/img/4.jpg">
+      <section id="practice" style="background-color:#fff; height:auto; min-height:20vw;margin-top:10vh" class="parallax-windows" data-parallax="scroll" data-image-src="assets/img/4.jpg">
         </section>
     <section class=" section" id="section1" style="background-color:#fff;height:600px; padding:15px;">
             <div class="container">    
