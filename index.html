@@ -27,13 +27,16 @@
  
         </style>
         <script>
-            $(function(){
-                 new WOW().init();
-            });
-            
-            function anime(){
-                new WOW().init();
-            }
+            wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();
         </script>
         
     </head>
@@ -74,19 +77,50 @@
     </header>
         
   
-    <section class="section first-section active parallax-windows" id="section0" data-parallax="scroll" data-image-src="assets/img/100.jpg" style="height:33vw; min-height:200px;background-color:#fff;">
+    <section class="section first-section active parallax-windows" id="section0" data-parallax="scroll" data-image-src="assets/img/4.jpg" style="height:30vw; min-height:200px;background-color:#fff;">
          
     </section>
      <section class=" section" id="section1" style="background-color:#fff;height:600px; padding:15px;">
-             
+<!--         <div class="container">-->
+            <div class="col-xs-4 col-sm-4 col-lg-4">
+                <div class="info-box">
+                    <div class="box-body">
+                        <p style="text-align:center"><i class="fa fa-handshake-o" style="color:#1F81C2;font-size:12vw"></i></p>
+                        <p class="text-muted" style="text-align:center;font-size:3vw"><strong>Commitment</strong></p> 
+                    </div>
+                    <div class="box-footer">
+                       </div>
+                </div>
+            </div>
+             <div class="col-xs-4 col-sm-4 col-lg-4">
+                 <div class="info-box">
+                    <div class="box-body">
+                      <p style="text-align:center"><i class="fa fa-lightbulb-o" style="color:#1F81C2;font-size:12vw"></i></p>
+                       <p class="text-muted" style="text-align:center;font-size:3vw"><strong>Commersial Insight</strong></p> 
+                    </div>
+                     <div class="box-footer">
+                       </div>
+                </div>
+             </div>
+             <div class="col-xs-4 col-sm-4 col-lg-4">
+                   <div class="info-box">
+                        <div class="box-body">
+                          <p style="text-align:center"><i class="fa fa-bullseye" style="color:#1F81C2;font-size:12vw"></i></p>
+                           <p class="text-muted" style="text-align:center;font-size:3vw"><strong>Strategic Goals</strong></p> 
+                       </div>
+                       <div class="box-footer">
+                       </div>
+                 </div>
+<!--             </div>-->
+        </div>
      </section>
-      <section style="background-color:#fff;  height:auto; min-height:20vw" class="parallax-windows" data-parallax="scroll" data-image-src="assets/img/4.jpg">
+      <section style="background-color:#fff;  height:auto; min-height:20vw" class="parallax-windows" data-parallax="scroll" data-image-src="assets/img/12.jpg">
         </section>
     <section class=" section" id="section1" style="background-color:#fff;height:600px; padding:15px;">
             <div class="container">    
                  <div class="col-xs-4 col-sm-4 col-lg-4"> 
                     <div class="wow tada center" style="visibility: visible; animation-name: tada;">
-                        <img src="assets/img/law.png" style="width:50%;margin-top: 5vh">
+                        <img src="assets/img/like.png" style="width:50%;margin-top: 5vh">
                     </div>
                 </div>
                 <div class="col-xs-8 col-sm-8 col-lg-8"> 
@@ -156,7 +190,7 @@
                 </div>
                 <div class="row" style="background:#fff;line-height: 5vh;">
                      <div class="container text-center">
-                        <span class=" text-muted">  @ Tjajo & Partners 2018 </span>
+                        <span class=" text-muted">  © Tjajo & Partners 2018 </span>
                     </div>
                 </div>
                
