@@ -27,7 +27,7 @@ body > .container {
     /* Set the fixed height of the footer here */
 /*   /* height: 40px;*/
  /*   line-height: 5vh; /* Vertically center the text there */
-    background-color: #1F81C2;
+    background-color: #262f3a;
     color: #fff;
 }
 
@@ -46,27 +46,14 @@ html {
     min-height: 100%;
 }
  
-
-/* jssor slider loading skin spin css */
-.jssorl-009-spin img {
-    animation-name: jssorl-009-spin;
-    animation-duration: 1.6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+a{
+    color:#fff;
+    text-decoration: none;
 }
-
-@keyframes jssorl-009-spin {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
+a:hover{
+    color:#fff;
+    text-decoration: underline;
 }
-
- 
- 
  .parallax-windows {
     opacity: 0.5;
     filter: alpha(opacity=50); /* For IE8 and earlier */

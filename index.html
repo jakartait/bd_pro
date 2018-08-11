@@ -6,7 +6,8 @@
         <title>Tjajo & Partners</title>
         <link rel="icon" href="assets/img/logo-36x36.png" type="image/gif" sizes="16x16">
         <link rel="stylesheet" href="assets/css/AdminLTE.css">
-        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/hover.css">
         <link rel="stylesheet" href="assets/css/animate.delay.css">
         <link rel="stylesheet" href="assets/css/bootstrap.css">
         <link rel="stylesheet" href="assets/css/font-awesome.min.css">
@@ -23,16 +24,18 @@
 /*                min-height: 240px;*/
                 background: transparent;
             }
-             #map {
-/*                height: 100%;*/
-              }
+ 
         </style>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                new WOW().init();
-                jQuery(window).trigger('resize').trigger('scroll');
+        <script>
+            $(function(){
+                 new WOW().init();
             });
+            
+            function anime(){
+                new WOW().init();
+            }
         </script>
+        
     </head>
     <body onload="">
     <header class="sticky" style="margin-bottom: 10px">
@@ -71,7 +74,7 @@
     </header>
         
   
-    <section class="section first-section active parallax-windows" id="section0" data-parallax="scroll" data-image-src="assets/img/100.jpg" style="height:33vw; min-height:200px;background-color:#fff;" speed="0.5">
+    <section class="section first-section active parallax-windows" id="section0" data-parallax="scroll" data-image-src="assets/img/100.jpg" style="height:33vw; min-height:200px;background-color:#fff;">
          
     </section>
      <section class=" section" id="section1" style="background-color:#fff;height:600px; padding:15px;">
@@ -82,8 +85,8 @@
     <section class=" section" id="section1" style="background-color:#fff;height:600px; padding:15px;">
             <div class="container">    
                  <div class="col-xs-4 col-sm-4 col-lg-4"> 
-                    <div class="wow flipInY center" style="visibility: visible; animation-name: flipInY;">
-                        <img src="assets/img/law.png" style="width:70%;margin-top: 5vh">
+                    <div class="wow tada center" style="visibility: visible; animation-name: tada;">
+                        <img src="assets/img/law.png" style="width:50%;margin-top: 5vh">
                     </div>
                 </div>
                 <div class="col-xs-8 col-sm-8 col-lg-8"> 
@@ -104,8 +107,8 @@
                     
                 </div>
                <div class="col-xs-4 col-sm-4 col-lg-4"> 
-                    <div class="wow swing center" style="visibility: visible; animation-name: swing;">
-                        <img src="assets/img/archive.png" style="width:70%;margin-top: 5vh">
+                    <div class="wow jello center" style="visibility: visible; animation-name:jello; ">
+                        <img src="assets/img/auction.png" style="width:50%;margin-top: 5vh">
                     </div>
                 </div>
             </div>
@@ -117,27 +120,36 @@
         <footer class="footer">
             <section>
              <div class="container" >
-                  <div class="text-justify col-xs-4 col-sm-4 col-lg-4" style="height:auto;border-right: 1px dashed #ccc;">
-                        <address class="" style="">
+                  <div class="text-justify col-xs-4 col-sm-4 col-lg-4" style="height:auto;">
+                        <address style="">
                             <h1 style="font-size: 2vw">Address</h1>
                             <p style="font-size: 1vw"> Satrio Tower 15th Floor, Jl. Prof. DR. Satrio Blok C4 No.5, RT.7/RW.2, Kuningan, Kuningan Tim., Kecamatan Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12950 </p>
                         </address>
                   </div>
-                   <div class="text-justify col-xs-4 col-sm-4 col-lg-4 footer-block"  style="height:auto;border-right: 1px dashed #ccc;">
-                        <address class="" style="">
-                           <h1 style="font-size: 2vw">Kontak</h1>
+                   <div class="col-xs-4 col-sm-4 col-lg-4" style="height:auto;">
+                        <address class="pull-right" >
+                           <h1 style="font-size: 2vw">Contact</h1>
                             <p style="font-size: 1vw">Telp : +62 21 2251 3653 <br>
                             Fax : +62 21 2251 3655    <br> 
-                           Email : <a href="mailto:info@tjajolaw.id">info@tjajolaw.id</a></p>
+                           Email : <a href="mailto:info@tjajolaw.id">info@tjajolaw.id</a>
+                            <br></p>
                         </address>
-
                     </div>
-                     <div class="text-justify col-xs-4 col-sm-4 col-lg-4 footer-block"  >
-                        <address class="" style="">
-                           <h1 style="font-size: 2vw">Kontak</h1>
-                            <p style="font-size: 1vw">Telp : +62 21 2251 3653 <br>
-                            Fax : +62 21 2251 3655    <br> 
-                           Email : <a href="mailto:info@tjajolaw.id">info@tjajolaw.id</a></p>
+                     <div class="text-justify col-xs-4 col-sm-4 col-lg-4 footer-block;"  style="height:auto;">
+                        <address class="" style="background:#fff;">
+                            
+                            <div class="col-xs-2 pull-right">
+                                <h1 style="font-size: 2vw"> <a class="btn btn-social-icon btn-linkedin" onclick=""><span class="fa fa-linkedin"></span></a></h1> 
+                            </div>
+                             <div class="col-xs-2 pull-right">
+                                <h1 style="font-size: 2vw"> <a class="btn btn-social-icon btn-facebook" onclick=""><span class="fa fa-facebook"></span></a></h1>
+                            </div>
+                            <div class="col-xs-2 pull-right">
+                                <h1 style="font-size: 2vw"> <a class="btn btn-social-icon btn-twitter" onclick=""><span class="fa fa-twitter"></span></a></h1>
+                            </div>
+                            <div class="col-xs-2 pull-right">
+                                <h1 style="font-size: 2vw"> <a class="btn btn-social-icon btn-github" onclick=""><span class="fa fa-envelope"></span></a></h1> 
+                            </div>
                         </address>
                     </div>  
                 </div>
